@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": 1,
+  "updated": "2026-11-02",
+  "countries": [
+    { "code": "TR", "flag": "🇹🇷", "name": "Türkiye",        "feeds": [] },
+    { "code": "UK", "flag": "🇬🇧", "name": "United Kingdom", "feeds": [] },
+    { "code": "US", "flag": "🇺🇸", "name": "United States",  "feeds": [] },
+    { "code": "DE", "flag": "🇩🇪", "name": "Deutschland",    "feeds": [] },
+    { "code": "FR", "flag": "🇫🇷", "name": "France",         "feeds": [] },
+    { "code": "IT", "flag": "🇮🇹", "name": "Italia",         "feeds": [] },
+    { "code": "ES", "flag": "🇪🇸", "name": "España",         "feeds": [] },
+    { "code": "NL", "flag": "🇳🇱", "name": "Nederland",      "feeds": [] },
+    { "code": "EU", "flag": "🇪🇺", "name": "Europe",         "feeds": [] },
+    { "code": "KR", "flag": "🇰🇷", "name": "대한민국",        "feeds": [] },
+    { "code": "JP", "flag": "🇯🇵", "name": "日本",            "feeds": [] }
+  ],
+  "redirects": {},
+  "disabled": []
+}
