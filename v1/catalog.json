@@ -1,19 +1,505 @@
 {
   "schemaVersion": 1,
   "catalogVersion": 1,
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "countries": [
-    { "code": "TR", "flag": "🇹🇷", "name": "Türkiye",        "feeds": [] },
-    { "code": "UK", "flag": "🇬🇧", "name": "United Kingdom", "feeds": [] },
-    { "code": "US", "flag": "🇺🇸", "name": "United States",  "feeds": [] },
-    { "code": "DE", "flag": "🇩🇪", "name": "Deutschland",    "feeds": [] },
-    { "code": "FR", "flag": "🇫🇷", "name": "France",         "feeds": [] },
-    { "code": "IT", "flag": "🇮🇹", "name": "Italia",         "feeds": [] },
-    { "code": "ES", "flag": "🇪🇸", "name": "España",         "feeds": [] },
-    { "code": "NL", "flag": "🇳🇱", "name": "Nederland",      "feeds": [] },
-    { "code": "EU", "flag": "🇪🇺", "name": "Europe",         "feeds": [] },
-    { "code": "KR", "flag": "🇰🇷", "name": "대한민국",        "feeds": [] },
-    { "code": "JP", "flag": "🇯🇵", "name": "日本",            "feeds": [] }
+    {
+      "code": "TR",
+      "flag": "🇹🇷",
+      "name": "Türkiye",
+      "feeds": [
+        {
+          "name": "CNN Türk",
+          "url": "https://www.cnnturk.com/feed/rss/all/news",
+          "category": "news"
+        },
+        {
+          "name": "Habertürk",
+          "url": "https://www.haberturk.com/rss",
+          "category": "news"
+        },
+        {
+          "name": "NTV",
+          "url": "https://www.ntv.com.tr/turkiye.rss",
+          "category": "news"
+        },
+        {
+          "name": "TRT Haber",
+          "url": "https://www.trthaber.com/manset_articles.rss",
+          "category": "news"
+        },
+        {
+          "name": "Hürriyet",
+          "url": "https://www.hurriyet.com.tr/rss/anasayfa",
+          "category": "news"
+        },
+        {
+          "name": "Sözcü",
+          "url": "https://www.sozcu.com.tr/feeds-rss-category-sozcu",
+          "category": "news"
+        },
+        {
+          "name": "BBC Türkçe",
+          "url": "https://feeds.bbci.co.uk/turkce/rss.xml",
+          "category": "news"
+        },
+        {
+          "name": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel",
+          "category": "news"
+        },
+        {
+          "name": "Bloomberg HT",
+          "url": "https://www.bloomberght.com/rss/tum-haberler.xml",
+          "category": "business"
+        },
+        {
+          "name": "DonanımHaber",
+          "url": "https://www.donanimhaber.com/rss/tum/",
+          "category": "tech"
+        },
+        {
+          "name": "Webtekno",
+          "url": "https://www.webtekno.com/rss.xml",
+          "category": "tech"
+        },
+        {
+          "name": "ShiftDelete.Net",
+          "url": "https://shiftdelete.net/feed",
+          "category": "tech"
+        },
+        {
+          "name": "Fotomaç",
+          "url": "https://www.fotomac.com.tr/rss/anasayfa.xml",
+          "category": "sports"
+        }
+      ]
+    },
+    {
+      "code": "UK",
+      "flag": "🇬🇧",
+      "name": "United Kingdom",
+      "feeds": [
+        {
+          "name": "BBC News",
+          "url": "https://feeds.bbci.co.uk/news/rss.xml",
+          "category": "news"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/uk/rss",
+          "category": "news"
+        },
+        {
+          "name": "Sky News",
+          "url": "https://feeds.skynews.com/feeds/rss/home.xml",
+          "category": "news"
+        },
+        {
+          "name": "BBC Business",
+          "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+          "category": "business"
+        },
+        {
+          "name": "BBC Technology",
+          "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+          "category": "tech"
+        },
+        {
+          "name": "Guardian Technology",
+          "url": "https://www.theguardian.com/uk/technology/rss",
+          "category": "tech"
+        },
+        {
+          "name": "BBC Sport",
+          "url": "https://feeds.bbci.co.uk/sport/rss.xml",
+          "category": "sports"
+        }
+      ]
+    },
+    {
+      "code": "US",
+      "flag": "🇺🇸",
+      "name": "United States",
+      "feeds": [
+        {
+          "name": "The New York Times",
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+          "category": "news"
+        },
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/latest/rss/main",
+          "category": "news"
+        },
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/abcnews/topstories",
+          "category": "news"
+        },
+        {
+          "name": "Fox News",
+          "url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+          "category": "news"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/rss/index.xml",
+          "category": "tech"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/feed/",
+          "category": "tech"
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://feeds.arstechnica.com/arstechnica/index",
+          "category": "tech"
+        },
+        {
+          "name": "CBS Sports",
+          "url": "https://www.cbssports.com/rss/headlines/",
+          "category": "sports"
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "flag": "🇩🇪",
+      "name": "Deutschland",
+      "feeds": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/infoservices/alle-meldungen-100~rss2.xml",
+          "category": "news"
+        },
+        {
+          "name": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/schlagzeilen/index.rss",
+          "category": "news"
+        },
+        {
+          "name": "ZEIT ONLINE",
+          "url": "https://newsfeed.zeit.de/index",
+          "category": "news"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://rss.sueddeutsche.de/rss/Topthemen",
+          "category": "news"
+        },
+        {
+          "name": "n-tv",
+          "url": "https://www.n-tv.de/rss",
+          "category": "news"
+        },
+        {
+          "name": "DW Deutsch",
+          "url": "https://rss.dw.com/xml/rss-de-all",
+          "category": "news"
+        },
+        {
+          "name": "heise online",
+          "url": "https://www.heise.de/rss/heise-atom.xml",
+          "category": "tech"
+        }
+      ]
+    },
+    {
+      "code": "FR",
+      "flag": "🇫🇷",
+      "name": "France",
+      "feeds": [
+        {
+          "name": "Le Monde",
+          "url": "https://www.lemonde.fr/rss/une.xml",
+          "category": "news"
+        },
+        {
+          "name": "France 24",
+          "url": "https://www.france24.com/fr/rss",
+          "category": "news"
+        },
+        {
+          "name": "Le Figaro",
+          "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+          "category": "news"
+        },
+        {
+          "name": "franceinfo",
+          "url": "https://www.franceinfo.fr/titres.rss",
+          "category": "news"
+        },
+        {
+          "name": "20 Minutes",
+          "url": "https://www.20minutes.fr/feeds/rss-une.xml",
+          "category": "news"
+        },
+        {
+          "name": "01net",
+          "url": "https://www.01net.com/actualites/feed/",
+          "category": "tech"
+        },
+        {
+          "name": "L'Équipe",
+          "url": "https://dwh.lequipe.fr/api/edito/rss?path=/",
+          "category": "sports"
+        }
+      ]
+    },
+    {
+      "code": "IT",
+      "flag": "🇮🇹",
+      "name": "Italia",
+      "feeds": [
+        {
+          "name": "Corriere della Sera",
+          "url": "https://xml2.corriereobjects.it/rss/homepage.xml",
+          "category": "news"
+        },
+        {
+          "name": "la Repubblica",
+          "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+          "category": "news"
+        },
+        {
+          "name": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/topnews/topnews_rss.xml",
+          "category": "news"
+        },
+        {
+          "name": "Rai News",
+          "url": "https://www.rainews.it/rss/ultimora",
+          "category": "news"
+        },
+        {
+          "name": "Il Sole 24 Ore",
+          "url": "https://www.ilsole24ore.com/rss/italia.xml",
+          "category": "business"
+        },
+        {
+          "name": "HDblog",
+          "url": "https://www.hdblog.it/feed/",
+          "category": "tech"
+        },
+        {
+          "name": "La Gazzetta dello Sport",
+          "url": "https://www.gazzetta.it/rss/home.xml",
+          "category": "sports"
+        }
+      ]
+    },
+    {
+      "code": "ES",
+      "flag": "🇪🇸",
+      "name": "España",
+      "feeds": [
+        {
+          "name": "El País",
+          "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+          "category": "news"
+        },
+        {
+          "name": "El Mundo",
+          "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+          "category": "news"
+        },
+        {
+          "name": "ABC",
+          "url": "https://www.abc.es/rss/2.0/portada/",
+          "category": "news"
+        },
+        {
+          "name": "20minutos",
+          "url": "https://www.20minutos.es/rss",
+          "category": "news"
+        },
+        {
+          "name": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/rss/home.xml",
+          "category": "news"
+        },
+        {
+          "name": "Xataka",
+          "url": "https://www.xataka.com/feedburner.xml",
+          "category": "tech"
+        },
+        {
+          "name": "Marca",
+          "url": "https://e00-marca.uecdn.es/rss/portada.xml",
+          "category": "sports"
+        }
+      ]
+    },
+    {
+      "code": "NL",
+      "flag": "🇳🇱",
+      "name": "Nederland",
+      "feeds": [
+        {
+          "name": "NOS Nieuws",
+          "url": "https://feeds.nos.nl/nosnieuwsalgemeen",
+          "category": "news"
+        },
+        {
+          "name": "NU.nl",
+          "url": "https://www.nu.nl/rss/Algemeen",
+          "category": "news"
+        },
+        {
+          "name": "De Telegraaf",
+          "url": "https://www.telegraaf.nl/rss/",
+          "category": "news"
+        },
+        {
+          "name": "AD",
+          "url": "https://www.ad.nl/home/rss.xml",
+          "category": "news"
+        },
+        {
+          "name": "RTL Nieuws",
+          "url": "https://www.rtl.nl/rss.xml",
+          "category": "news"
+        },
+        {
+          "name": "de Volkskrant",
+          "url": "https://www.volkskrant.nl/voorpagina/rss.xml",
+          "category": "news"
+        },
+        {
+          "name": "NOS Sport",
+          "url": "https://feeds.nos.nl/nossportalgemeen",
+          "category": "sports"
+        }
+      ]
+    },
+    {
+      "code": "EU",
+      "flag": "🇪🇺",
+      "name": "Europe",
+      "feeds": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/rss",
+          "category": "world"
+        },
+        {
+          "name": "DW English",
+          "url": "https://rss.dw.com/rdf/rss-en-all",
+          "category": "world"
+        },
+        {
+          "name": "France 24 Europe",
+          "url": "https://www.france24.com/en/europe/rss",
+          "category": "world"
+        },
+        {
+          "name": "BBC Europe",
+          "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+          "category": "world"
+        },
+        {
+          "name": "Guardian Europe",
+          "url": "https://www.theguardian.com/world/europe-news/rss",
+          "category": "world"
+        }
+      ]
+    },
+    {
+      "code": "KR",
+      "flag": "🇰🇷",
+      "name": "대한민국",
+      "feeds": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/rss/news.xml",
+          "category": "news"
+        },
+        {
+          "name": "Yonhap News (English)",
+          "url": "https://en.yna.co.kr/RSS/news.xml",
+          "category": "news"
+        },
+        {
+          "name": "한겨레",
+          "url": "https://www.hani.co.kr/rss",
+          "category": "news"
+        },
+        {
+          "name": "조선일보",
+          "url": "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+          "category": "news"
+        },
+        {
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/rss/rssdata/total_news.xml",
+          "category": "news"
+        },
+        {
+          "name": "The Korea Times",
+          "url": "https://feed.koreatimes.co.kr/k/allnews.xml",
+          "category": "news"
+        },
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/rss/30000001/",
+          "category": "business"
+        },
+        {
+          "name": "ZDNet Korea",
+          "url": "https://feeds.feedburner.com/zdkorea",
+          "category": "tech"
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "flag": "🇯🇵",
+      "name": "日本",
+      "feeds": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+          "category": "news"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/rss/etc/mainichi-flash.rss",
+          "category": "news"
+        },
+        {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com/topics/rss/top.xml",
+          "category": "news"
+        },
+        {
+          "name": "The Japan Times",
+          "url": "https://www.japantimes.co.jp/feed/",
+          "category": "news"
+        },
+        {
+          "name": "東洋経済オンライン",
+          "url": "https://toyokeizai.net/list/feed/rss",
+          "category": "business"
+        },
+        {
+          "name": "ギズモード・ジャパン",
+          "url": "https://www.gizmodo.jp/feed/index.xml",
+          "category": "tech"
+        },
+        {
+          "name": "IGN Japan",
+          "url": "https://jp.ign.com/feed.xml",
+          "category": "tech"
+        },
+        {
+          "name": "ITmedia NEWS",
+          "url": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+          "category": "tech"
+        }
+      ]
+    }
   ],
   "redirects": {},
   "disabled": []
